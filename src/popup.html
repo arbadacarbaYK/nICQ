@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nICQ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <img src="icons/Logo_ICQ.png" alt="nICQ Logo">
+    </div>
+    <div id="loginSection">
+        <input type="password" id="nsec" placeholder="Enter your nsec">
+        <button id="loginButton">Login</button>
+    </div>
+    <div id="connectionStatus"></div>
+    <div id="contactStatus"></div>
+    <div id="error" class="error" style="display: none;"></div>
+    <div id="contactSection" style="display: none;">
+        <select id="contactSelect">
+            <option value="">Select a contact</option>
+        </select>
+    </div>
+    <div id="messageSection" style="display: none;">
+        <textarea id="messageInput" placeholder="Type your message"></textarea>
+        <button id="sendButton">Send</button>
+    </div>
+    <div id="chatContainer"></div>
+    <script src="popup.js"></script>
+</body>
+</html>
